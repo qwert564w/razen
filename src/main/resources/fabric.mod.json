@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "ryzen",
+  "version": "1.0.0",
+  "name": "Ryzen",
+  "description": "A clean Fabric client base for Minecraft 1.21.11.",
+  "authors": [],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.ryzen.Ryzen",
+      "org.ryzen.Blade"
+    ],
+    "client": [
+      "dev.ryzen.client.RyzenClient"
+    ]
+  },
+  "mixins": [
+    "ryzen.mixins.json",
+    {
+      "config": "ryzen.client.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "proxyserver.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/CubeConverter-abecffaaea.jar"
+    },
+    {
+      "file": "META-INF/jars/HMI 5.1.1 (1.21.11).jar"
+    },
+    {
+      "file": "META-INF/jars/ImmediatelyFast-Fabric-1.14.3+1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/MinecraftAuth-5.0.1.jar"
+    },
+    {
+      "file": "META-INF/jars/Reflect-1.6.2.jar"
+    },
+    {
+      "file": "META-INF/jars/TRansition-1.0.21-1.21.11-fabric-SNAPSHOT.jar"
+    },
+    {
+      "file": "META-INF/jars/TRender-1.0.15-1.21.11-fabric-SNAPSHOT.jar"
+    },
+    {
+      "file": "META-INF/jars/ViaBedrock-0.0.29-20260619.225131-1.jar"
+    },
+    {
+      "file": "META-INF/jars/ViaFabricPlus-4.4.14.jar"
+    },
+    {
+      "file": "META-INF/jars/ViaLegacy-3.0.16.jar"
+    },
+    {
+      "file": "META-INF/jars/appleskin-fabric-mc1.21.11-3.0.8.jar"
+    },
+    {
+      "file": "META-INF/jars/baritone-api.jar"
+    },
+    {
+      "file": "META-INF/jars/classic4j-2.3.0.jar"
+    },
+    {
+      "file": "META-INF/jars/dialog-5-3.2.2-20251210.004302-1.jar"
+    },
+    {
+      "file": "META-INF/jars/entityculling-fabric-1.10.5-mc1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/error_prone_annotations-2.41.0.jar"
+    },
+    {
+      "file": "META-INF/jars/expiringmap-0.5.10.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-api-base-1.0.5+4ebb5c083e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-block-view-api-v2-1.0.39+4ebb5c083e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-command-api-v2-2.4.7+6b42a6003e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-key-binding-api-v1-1.1.7+4fc5413f3e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-lifecycle-events-v1-2.6.15+4ebb5c083e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-networking-api-v1-5.1.6+6b6d71a53e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-particles-v1-4.2.12+4fc5413f3e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-registry-sync-v0-6.2.6+1718722b3e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-renderer-api-v1-8.0.0+f4ffd2e53e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-rendering-fluids-v1-3.1.43+4ebb5c083e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-rendering-v1-16.2.7+f4ffd2e53e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-resource-loader-v0-3.3.4+4fc5413f3e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-resource-loader-v1-1.0.10+78c8b4663e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-screen-api-v1-3.1.7+4ebb5c083e.jar"
+    },
+    {
+      "file": "META-INF/jars/fabric-transitive-access-wideners-v1-7.0.8+0107c3da3e.jar"
+    },
+    {
+      "file": "META-INF/jars/ferritecore-8.2.0-fabric.jar"
+    },
+    {
+      "file": "META-INF/jars/figura-0.1.5+1.21.11-fabric-mc.jar"
+    },
+    {
+      "file": "META-INF/jars/forms-2.0.1.jar"
+    },
+    {
+      "file": "META-INF/jars/gson-1.9.2.jar"
+    },
+    {
+      "file": "META-INF/jars/gson-2.13.2.jar"
+    },
+    {
+      "file": "META-INF/jars/httpclient-1.9.2.jar"
+    },
+    {
+      "file": "META-INF/jars/jjwt-api-0.13.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jjwt-gson-0.13.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jjwt-impl-0.13.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jsoup-1.18.3.jar"
+    },
+    {
+      "file": "META-INF/jars/jsvg-2.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/lithium-fabric-0.21.4+mc1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/luaj-core-3.0.8-figura.jar"
+    },
+    {
+      "file": "META-INF/jars/luaj-jse-3.0.8-figura.jar"
+    },
+    {
+      "file": "META-INF/jars/mc_biome-1.171.1.jar"
+    },
+    {
+      "file": "META-INF/jars/mc_core-1.210.0.jar"
+    },
+    {
+      "file": "META-INF/jars/mc_math-1.171.0.jar"
+    },
+    {
+      "file": "META-INF/jars/mc_noise-1.171.1.jar"
+    },
+    {
+      "file": "META-INF/jars/mc_seed-1.171.2.jar"
+    },
+    {
+      "file": "META-INF/jars/mixinextras-fabric-0.3.6.jar"
+    },
+    {
+      "file": "META-INF/jars/mocha-3.0.1.jar"
+    },
+    {
+      "file": "META-INF/jars/modmenu-17.0.1-beta.1.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-codec-socks-4.2.15.Final.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-handler-proxy-4.2.15.Final.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-transport-nethernet-1.7.0.jar"
+    },
+    {
+      "file": "META-INF/jars/netty-transport-raknet-1.7.0.jar"
+    },
+    {
+      "file": "META-INF/jars/nv-websocket-client-2.14.jar"
+    },
+    {
+      "file": "META-INF/jars/placeholder-api-2.8.2+1.21.10.jar"
+    },
+    {
+      "file": "META-INF/jars/reeses-sodium-options-fabric-2.2.3+mc1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/registry-5-3.2.2-SNAPSHOT.jar"
+    },
+    {
+      "file": "META-INF/jars/semver4j-3.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/sodium-extra-fabric-0.9.3+mc1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/sodium-fabric-0.8.13+mc1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/text-2.0.1.jar"
+    },
+    {
+      "file": "META-INF/jars/viaaprilfools-common-4.2.1.jar"
+    },
+    {
+      "file": "META-INF/jars/viabackwards-common-5.10.0.jar"
+    },
+    {
+      "file": "META-INF/jars/viafabricplus-api-4.4.14.jar"
+    },
+    {
+      "file": "META-INF/jars/viafabricplus-visuals-4.4.14.jar"
+    },
+    {
+      "file": "META-INF/jars/viaversion-common-5.10.0.jar"
+    },
+    {
+      "file": "META-INF/jars/waveycapes-fabric-1.10.2-mc1.21.11.jar"
+    },
+    {
+      "file": "META-INF/jars/webrtc-java-1.0.3-linux-aarch64.jar"
+    },
+    {
+      "file": "META-INF/jars/webrtc-java-1.0.3-linux-x86_64.jar"
+    },
+    {
+      "file": "META-INF/jars/webrtc-java-1.0.3-macos-aarch64.jar"
+    },
+    {
+      "file": "META-INF/jars/webrtc-java-1.0.3-windows-aarch64.jar"
+    },
+    {
+      "file": "META-INF/jars/webrtc-java-1.0.3-windows-x86_64.jar"
+    },
+    {
+      "file": "META-INF/jars/webrtc-java-1.0.3.jar"
+    }
+  ]
+}
