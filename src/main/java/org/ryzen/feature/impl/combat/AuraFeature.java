@@ -59,6 +59,7 @@ import org.ryzen.utils.combat.rotations.PolarRotation;
 import org.ryzen.utils.combat.rotations.SlothRotation;
 import org.ryzen.utils.combat.rotations.SmoothRotation;
 import org.ryzen.utils.combat.rotations.SolutionRotation;
+import org.ryzen.utils.combat.rotations.IntpolRotation;
 import org.ryzen.utils.math.TickSimulator;
 
 @Environment(EnvType.CLIENT)
@@ -137,7 +138,8 @@ public final class AuraFeature extends Feature implements MinecraftContext {
             "NeuroNotAiTreinig",
             "Sloth",
             "Neuro",
-            "Builder"
+            "Builder",
+            "Intpol"
          )
          .chips()
          .renamedFrom("Grim 1", "Grim")
@@ -156,6 +158,7 @@ public final class AuraFeature extends Feature implements MinecraftContext {
    private final AuraRotation spookyTimeTwoRotation = ExpensiveRotation.spookyTime();
    private final AuraRotation neuroRotation = NeuroManager.activeRotation();
    private final AuraRotation builderRotation = new BuilderRotation();
+   private final AuraRotation intpolRotation = new IntpolRotation();
    private final AttackTiming timing = new AttackTiming();
    private final AuraAttackController attackController = new AuraAttackController();
    private LivingEntity target;
@@ -496,6 +499,7 @@ public final class AuraFeature extends Feature implements MinecraftContext {
          case "SpookyTime 2" -> this.spookyTimeTwoRotation;
          case "Neuro" -> this.neuroRotation;
          case "Builder" -> this.builderRotation;
+         case "Intpol" -> this.intpolRotation;
          default -> this.matrixVulcanRotation;
       };
    }
@@ -511,6 +515,7 @@ public final class AuraFeature extends Feature implements MinecraftContext {
       this.neuroNotAiRotation.reset();
       this.spookyTimeTwoRotation.reset();
       this.builderRotation.reset();
+      this.intpolRotation.reset();
    }
 
    private double attackRangeBlocks(ClientPlayerEntity player) {
