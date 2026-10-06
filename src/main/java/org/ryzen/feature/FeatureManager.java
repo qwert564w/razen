@@ -170,6 +170,18 @@ import org.ryzen.feature.impl.visual.ViewModelFeature;
 import org.ryzen.feature.impl.visual.WardenEspFeature;
 import org.ryzen.feature.impl.visual.WorldParticlesFeature;
 import org.ryzen.feature.impl.visual.WorldTweaksFeature;
+import org.ryzen.feature.impl.visual.AtmosphereFeature;
+import org.ryzen.feature.impl.visual.BladeStormFeature;
+import org.ryzen.feature.impl.visual.FireFliesFeature;
+import org.ryzen.feature.impl.visual.GazeThreadsFeature;
+import org.ryzen.feature.impl.visual.GlassBlockFeature;
+import org.ryzen.feature.impl.visual.ParticlesFeature;
+import org.ryzen.feature.impl.visual.RainsFeature;
+import org.ryzen.feature.impl.visual.SoulChainFeature;
+import org.ryzen.feature.impl.visual.SoulSwarmFeature;
+import org.ryzen.feature.impl.visual.TargetEspFeature;
+import org.ryzen.feature.impl.visual.TrailsFeature;
+
 import org.ryzen.feature.setting.BindSetting;
 
 @Environment(EnvType.CLIENT)
@@ -279,6 +291,17 @@ public final class FeatureManager {
                new KillEffectFeature(),
                new BoardSpooferFeature(),
                new WardenEspFeature(),
+               new AtmosphereFeature(),
+               new BladeStormFeature(),
+               new FireFliesFeature(),
+               new GazeThreadsFeature(),
+               new GlassBlockFeature(),
+               new ParticlesFeature(),
+               new RainsFeature(),
+               new SoulChainFeature(),
+               new SoulSwarmFeature(),
+               new TargetEspFeature(),
+               new TrailsFeature(),
                new NameProtectFeature(),
                new NoDelaysFeature(),
                new DeathCoordsFeature(),
